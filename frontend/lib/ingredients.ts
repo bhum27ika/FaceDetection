@@ -1,0 +1,133 @@
+export interface Ingredient {
+  id: string;
+  name: string;
+  description: string;
+  benefits: string[];
+  suitableFor: string[];
+  notSuitableFor: string[];
+  concentration: string;
+  timeToSeeResults: string;
+}
+
+export const ingredients: Record<string, Ingredient> = {
+  kojicAcid: {
+    id: 'kojic-acid',
+    name: 'Kojic Acid',
+    description: 'A natural fungal metabolite that inhibits melanin production',
+    benefits: ['Reduces dark spots', 'Brightens skin', 'Fades hyperpigmentation'],
+    suitableFor: ['Dark spots', 'Uneven skin tone', 'Post-inflammatory hyperpigmentation'],
+    notSuitableFor: ['Sensitive skin (use with caution)'],
+    concentration: '1-2%',
+    timeToSeeResults: '4-8 weeks',
+  },
+  niacinamide: {
+    id: 'niacinamide',
+    name: 'Niacinamide (Vitamin B3)',
+    description: 'Strengthens skin barrier and reduces sebum production',
+    benefits: ['Reduces pore size', 'Controls oil production', 'Strengthens barrier', 'Anti-inflammatory'],
+    suitableFor: ['Acne', 'Oily skin', 'Large pores', 'Sensitive skin'],
+    notSuitableFor: [],
+    concentration: '4-5%',
+    timeToSeeResults: '2-4 weeks',
+  },
+  retinol: {
+    id: 'retinol',
+    name: 'Retinol',
+    description: 'Vitamin A derivative that promotes cell turnover and collagen production',
+    benefits: ['Reduces fine lines', 'Improves texture', 'Boosts collagen', 'Reduces acne'],
+    suitableFor: ['Fine lines', 'Acne', 'Dull skin', 'Texture issues'],
+    notSuitableFor: ['Sensitive skin', 'Pregnancy'],
+    concentration: '0.25-1%',
+    timeToSeeResults: '6-12 weeks',
+  },
+  salicylicAcid: {
+    id: 'salicylic-acid',
+    name: 'Salicylic Acid (BHA)',
+    description: 'Oil-soluble exfoliant that penetrates pores',
+    benefits: ['Unclogs pores', 'Reduces acne', 'Removes dead skin', 'Controls oil'],
+    suitableFor: ['Acne', 'Oily skin', 'Clogged pores', 'Blackheads'],
+    notSuitableFor: ['Sensitive skin', 'Dry skin'],
+    concentration: '0.5-2%',
+    timeToSeeResults: '2-6 weeks',
+  },
+  hyaluronicAcid: {
+    id: 'hyaluronic-acid',
+    name: 'Hyaluronic Acid',
+    description: 'Humectant that holds up to 1000x its weight in water',
+    benefits: ['Deep hydration', 'Plumps skin', 'Reduces fine lines', 'Improves texture'],
+    suitableFor: ['Dry skin', 'Dehydrated skin', 'All skin types', 'Sensitive skin'],
+    notSuitableFor: [],
+    concentration: '0.5-2%',
+    timeToSeeResults: '1-2 weeks',
+  },
+  glycolicAcid: {
+    id: 'glycolic-acid',
+    name: 'Glycolic Acid (AHA)',
+    description: 'Water-soluble exfoliant derived from sugar cane',
+    benefits: ['Exfoliates dead skin', 'Brightens', 'Improves texture', 'Reduces spots'],
+    suitableFor: ['Dull skin', 'Acne scars', 'Dark spots', 'Texture issues'],
+    notSuitableFor: ['Very sensitive skin'],
+    concentration: '5-10%',
+    timeToSeeResults: '2-4 weeks',
+  },
+  vitaminC: {
+    id: 'vitamin-c',
+    name: 'Vitamin C',
+    description: 'Antioxidant that brightens and protects skin',
+    benefits: ['Brightens', 'Antioxidant protection', 'Boosts collagen', 'Fades dark spots'],
+    suitableFor: ['Dull skin', 'Dark spots', 'All skin types'],
+    notSuitableFor: [],
+    concentration: '10-20%',
+    timeToSeeResults: '4-8 weeks',
+  },
+  neem: {
+    id: 'neem',
+    name: 'Neem',
+    description: 'Natural antibacterial and antifungal ingredient',
+    benefits: ['Antibacterial', 'Reduces acne', 'Anti-inflammatory', 'Heals scars'],
+    suitableFor: ['Acne-prone', 'Oily skin', 'Inflammation'],
+    notSuitableFor: [],
+    concentration: '5-10%',
+    timeToSeeResults: '2-4 weeks',
+  },
+  turmeric: {
+    id: 'turmeric',
+    name: 'Turmeric',
+    description: 'Natural anti-inflammatory and antioxidant',
+    benefits: ['Reduces inflammation', 'Brightens', 'Heals acne', 'Antioxidant'],
+    suitableFor: ['Sensitive skin', 'Acne', 'Inflammation', 'Dark spots'],
+    notSuitableFor: [],
+    concentration: '2-5%',
+    timeToSeeResults: '1-3 weeks',
+  },
+  sandalwood: {
+    id: 'sandalwood',
+    name: 'Sandalwood',
+    description: 'Soothing and cooling ingredient',
+    benefits: ['Calms skin', 'Reduces redness', 'Evens tone', 'Antiseptic'],
+    suitableFor: ['Sensitive skin', 'Redness', 'Irritation'],
+    notSuitableFor: [],
+    concentration: '2-5%',
+    timeToSeeResults: '1-2 weeks',
+  },
+  aloe: {
+    id: 'aloe',
+    name: 'Aloe Vera',
+    description: 'Soothing and hydrating botanical extract',
+    benefits: ['Hydrates', 'Soothes irritation', 'Heals wounds', 'Reduces redness'],
+    suitableFor: ['Sensitive skin', 'Irritated skin', 'Dry skin', 'Acne'],
+    notSuitableFor: [],
+    concentration: '10-20%',
+    timeToSeeResults: '1-2 weeks',
+  },
+  zincPCA: {
+    id: 'zinc-pca',
+    name: 'Zinc PCA',
+    description: 'Regulates sebum production',
+    benefits: ['Controls oil', 'Reduces acne', 'Shrinks pores', 'Antibacterial'],
+    suitableFor: ['Oily skin', 'Acne', 'Large pores'],
+    notSuitableFor: [],
+    concentration: '1-2%',
+    timeToSeeResults: '2-4 weeks',
+  },
+};
