@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+tensorflow
+opencv-python
+numpy
+openai
+requests
+opencv-python
+google-generativeai
